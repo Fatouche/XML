@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- Champagne Seance 1 - Exo 2 - Champagne -->
+<!-- Objectif - Création d'un format XML à partir d'un texte libre -->
+<!-- Objectif - Questionnement: Informations? Pourquoi faire? Destiné à qui? -->
+<steps>
+  <step nom="pressurage">
+    <desc>Le pressurage consiste a presser manuellement le raisin pour en faire  ́
+      eclater les baies.</desc>
+  </step>
+  <step nom="fermentation">
+    <desc>
+      La fermentation est la phase de mise en cuve du jus de raisin. Celle-ci
+      dure quinze jours environ. Conseree a une temperature constante de 18-20
+      C, cette 1ere fermentation dite “alcoolique” active les levures
+      naturelles presentes dans le jus de raisin et transforme lessucres en un
+      melange d’alcool et de gaz carbonique.
+    </desc>
+    <constraint type="temperature" unite="C">18-20</constraint>
+    <constraint type="duree" unite="jour">15</constraint>
+  </step>
+  <!-- other steps -->
+  <step nom="repos_champagne">
+    <desc>
+      Le vin reposera 15 mois pour la fabrication d’un champagne brut.
+    </desc>
+    <constraint type="duree" unite="mois">15</constraint>
+  </step>
+  <step nom="repos_millesime">
+    <desc>
+      Le vin reposera 36 mois pour la fabrication d'un Millésime.
+    </desc>
+    <constraint type="duree" unite="mois">36</constraint>
+  </step>
+  <!-- other steps -->
+</steps>

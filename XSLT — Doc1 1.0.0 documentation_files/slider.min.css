@@ -1,0 +1,150 @@
+/* ----------BEGIN CAN MODIFY------------ */
+* {
+    outline: 0px solid red;
+}
+article > section h1,
+article > section h2,
+article > section h3,
+article > section h4,
+article > section h5,
+article > section h6{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#slider_container div.container{
+  width: 100%;
+}
+
+/* ----------END CAN MODIFY------------ */
+
+/* ----------BEGIN ALL MODE------------ */
+#slider_container {
+  width: 80%;
+  margin: auto;
+  min-height:100vh;
+  max-height:100vh;
+  overflow-y: auto;
+}
+
+/* ----------END ALL MODE------------ */
+
+/* ----------BEGIN DIAPO MODE------------ */
+#nSlide{
+  position: fixed;
+  height: 100vh;
+  width: 10%;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+#pSlide{
+  position: fixed;
+  height: 100vh;
+  width: 10%;
+  top: 0;
+  left: 0;
+  cursor:pointer;
+}
+#slider_container.layout_diapo{background-color: rgb(255, 255, 255);}
+#slider_container.layout_diapo section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 15px;
+  display:none;
+}
+#slider_container.layout_diapo section.current {
+  display:block;
+}
+#slider_container.layout_diapo section .slide-c{
+  /* TODO use media */
+  /* for chrome */
+  word-break: break-word;
+  /* for firefox when screen is to small */
+}
+#slider_container.layout_diapo section .slide-n{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  padding: 0px 8px;
+  background-color: black;
+  color: white;
+}
+#slider_container.layout_diapo section .slide-c :last-child{
+  margin-bottom: 0;
+}
+/* ----------END DIAPO MODE------------ */
+
+/* ----------BEGIN TABLE MODE------------ */
+#slider_container.layout_table{background-color: rgb(249, 249, 249);}
+#slider_container.layout_table section{
+  position: relative;
+}
+#slider_container.layout_table .slide-a{
+  --cell-corner-radius: 8px;
+  background-color: rgba(255,255,255,1);
+  border-radius: var(--cell-corner-radius);
+  display: inline-grid;
+  height: 23vh;
+  margin: 1%;
+  width: 23%;
+  cursor: pointer;
+}
+#slider_container.layout_table .slide-a:hover{
+  box-shadow: 2px 3px 5px rgba(135,206,235,1);
+  -moz-box-shadow: 2px 3px 2px rgba(135,206,235,1);
+  -webkit-box-shadow: 2px 3px 5px rgba(135,206,235,1);
+}
+#slider_container.layout_table .slide-b {
+  border-radius: var(--cell-corner-radius);
+  box-shadow: 0 1px 3px #c1c1c1;
+  text-decoration: none;
+  transition-property: top, left, opacity, box-shadow, background-color;
+  position: relative;
+  -moz-box-flex: 1;
+  transition: 100ms ease-out;
+  transition-property: top, left, opacity;
+}
+#slider_container.layout_table section.current .slide-b {
+  box-shadow: 1px 1px 5px red;
+}
+#slider_container.layout_table .slide-c {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--cell-corner-radius);
+    overflow: hidden;
+    padding: 5px;
+    max-height: 22vh !important;
+}
+#slider_container.layout_table .slide-c div{
+  transform: none !important;
+}
+#slider_container.layout_table section .slide-n{
+  position: absolute;
+  font-size:10px;
+  top: 5px;
+  right: 5px;
+  color:black;
+}
+#slider_container.layout_table textarea, #slider_container.layout_table input{
+  display:none;
+}
+/* ----------END TABLE MODE------------ */
+
+/* ----------BEGIN OVERFLOW------------ */
+/* overflowing solving auto and hide*/
+#slider_container.o_auto{
+  overflow-y: auto;
+}
+#slider_container.o_hide{
+  overflow-y: hidden;
+}
+/*#slider_container img{
+  max-height: 80vh;
+  max-width: 100%;
+}*/
+/* ----------END OVERFLOW------------ */

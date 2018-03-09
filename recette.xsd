@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<element name="recette">
+	<complexType>
+		<sequence>
+			<element name="nom" type="string"/>
+			<element name="desc" type="string"/>
+			<element name="duree_prep">
+				<simpleContent>
+					<extension base="int">
+						<attribut name="unite" type="string" />
+					</extension>
+				</simpleContent>
+			</element>
+			<element name="duree_cuisson">
+				<simpleContent>
+					<extension base="int">
+						<attribut name="unite" type="string" />
+					</extension>
+				</simpleContent>
+			</element>
+			<element name="nb_calories" type="int"/>
+			<element name="nb_part" type="int"/>
+			<element name="niveau_difficulte">
+				<simpleContent>
+					<restriction base="string">
+						<enumeration value="simple" />
+						<enumeration value="moyen" />
+						<enumeration value="difficile" />
+					</restriction>
+				</simpleContent>
+			</element>
+			<element name = "ingredients">
+				<sequence>
+					<complexType>
+						<element name="nom" type="string"/>
+						<element name="nb_calories" type="int"/>
+						<element name="qte" />
+							<simpleContent>
+								<extension base="int">
+									<attribut name="unite" type="string" />
+								</extension>
+							</simpleContent>
+						<element name="conditionnement">
+							<sequence>
+								<complexType>
+									<simpleContent>
+										<extension base="int">
+											<attribut name="unite" type="string" />
+											<attribut name="lieu" type="string" />
+										</extension>
+									</simpleContent>
+								</complexType>
+							</sequence>
+						</element>
+					</complexType>
+				</sequence>
+			</element>		
+		</sequence>
+	</complexType>
+</element>

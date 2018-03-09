@@ -1,0 +1,6 @@
+<!ELEMENT steps (step+)>
+<!ELEMENT step (#PCDATA|em)*>
+<!ELEMENT em (#PCDATA)>
+
+
+

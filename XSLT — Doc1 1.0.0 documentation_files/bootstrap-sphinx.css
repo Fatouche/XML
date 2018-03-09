@@ -1,0 +1,364 @@
+/*
+ * bootstrap-sphinx.css
+ * ~~~~~~~~~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- Bootstrap theme.
+ */
+
+/*
+ * Imports to aggregate everything together.
+ */
+
+@import url("./basic.css");
+
+
+  
+
+
+
+  
+  
+    @import url("./bootswatch-3.3.7/united/bootstrap.min.css");
+  
+
+
+/*
+ * Styles
+ */
+
+.navbar-inverse .brand {
+  color: #FFF;
+}
+
+/*
+ * Reset navbar styles from overrides in:
+ * https://bitbucket.org/birkenfeld/sphinx/commits/78d8ebf76b630ab4073a7328af9d91e8123b8d96
+ */
+.navbar .container {
+  padding-top: 0;
+}
+
+/*
+ * Reset the logo image dimensions. Sites like RTD can override with bad
+ * results on mobile (mega-huge logo...)
+ *
+ * https://github.com/ryan-roemer/sphinx-bootstrap-theme/issues/142
+ */
+.navbar-brand img {
+  width: auto;
+  height: 100%;
+}
+
+.page-top {
+  top: 0px;
+}
+
+
+
+
+
+  body {
+    
+      padding-top: 60px;
+    
+  }
+  .page-top {
+    
+      top: 60px;
+    
+  }
+
+
+
+.navbar-inner {
+  padding-left:  12px !important;
+  padding-right: 12px !important;
+}
+
+
+
+table {
+  border: 0;
+}
+
+.toctree-wrapper{
+  display:none;
+}
+
+.highlighttable .code pre {
+    font-size: 12px;
+}
+
+.highlighttable .linenos pre {
+    word-break: normal;
+    font-size: 12px;
+}
+
+div.highlight {
+  background: none;
+}
+
+a.headerlink {
+  margin-left: 0.25em;
+}
+
+a.footnote-reference {
+  vertical-align: super;
+  font-size: 75%;
+}
+
+table.footnote td.label {
+  color: inherit;
+  font-size: 100%;
+  display: block;
+  line-height: normal;
+  background: inherit;
+}
+
+table.footnote {
+  width: auto;
+  margin-bottom: 0px;
+}
+
+table.field-list {
+  width: auto;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  position:fixed;
+  bottom:0;
+  background-color:#fff;
+}
+
+.bs-sidenav form, .bs-sidenav #sourcelink {
+  padding: 5px 20px;
+}
+
+
+
+/* The code below is based on the bootstrap website sidebar */
+
+.bs-sidenav.affix {
+  position: static;
+}
+
+/* First level of nav */
+.bs-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 5px;
+}
+
+/* All levels of nav */
+.bs-sidenav .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidenav .nav > li > a:hover,
+.bs-sidenav .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.bs-sidenav .nav > .active > a,
+.bs-sidenav .nav > .active:hover > a,
+.bs-sidenav .nav > .active:focus > a {
+  font-weight: bold;
+  color: #563d7c;
+  background-color: transparent;
+  border-right: 1px solid #563d7c;
+}
+
+.bs-sidenav .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+.bs-sidenav .nav .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 40px;
+  font-size: 90%;
+}
+
+.bs-sidenav .nav .nav .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 50px;
+  font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 992px) {
+  .bs-sidenav .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidenav */
+  .bs-sidenav.affix,
+  .bs-sidenav.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidenav.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+  }
+  .bs-sidenav.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidenav.affix-bottom .bs-sidenav,
+  .bs-sidenav.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidenav again */
+  .bs-sidenav.affix-bottom,
+  .bs-sidenav.affix {
+    width: 263px;
+  }
+}
+
+
+
+
+
+/* -------------------------  */
+/* -----vertical Menu ------ */
+/* -------------------------  */
+.main-container
+{
+  padding-bottom:60px;
+}
+
+.navbar-form .form-control{
+  padding: 4px;
+}
+
+.ma-menu {
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  width: 230px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 100%;
+  /* top in ma-menu + footer height  */
+  padding-bottom:90px;
+}
+
+@media (max-width:992px) {
+	.ma-menu {
+	   position:unset;
+     width: 100%;
+     padding-bottom:0;
+  }
+}
+
+.ma-menu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+}
+
+.ma-menu > ul {
+    border: 1px solid #ccc;
+    background: #fff;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.ma-menu > ul > li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.ma-menu ul
+{
+  display:none;
+}
+
+.ma-menu > ul {
+    position: relative;
+    display: block;
+}
+
+
+
+.ma-menu > ul > li.current > a {
+    color: #777;
+}
+
+.ma-menu > ul > li a:hover {
+    font-weight:bold;
+    border-left: 5px solid #5c2040;
+}
+
+.ma-menu li.current > a {
+    font-weight:bold;
+}
+
+.ma-menu ul li a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.ma-menu li.current > ul{
+  display: block;
+}
+
+.ma-menu i {
+    margin-right: 5px;
+}
+.ma-menu .toctree-l1 > a{
+  padding: 12px 10px;
+  font-size: 14px;
+}
+.ma-menu .toctree-l2 > a{
+  padding: 8px 20px;
+  font-size: 13px;
+}
+.ma-menu .toctree-l3 > a{
+  padding: 6px 30px;
+  font-size: 12px;
+}
+
+.ma-menu .toctree-l4 > a{
+  padding: 4px 40px;
+  font-size: 11px;
+}
+
+.ma-menu ul li a {
+    color: #888;
+}
+
+.container .container {
+  width:inherit;
+  margin:inherit;
+  padding-left:inherit;
+  padding-right:inherit;
+}
+
+input, select, textarea.form-control
+{
+  font-family:Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size:90%;
+}
+
+iframe body{
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  font-size: 90%;
+}

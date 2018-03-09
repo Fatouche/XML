@@ -1,0 +1,14 @@
+<table><th>Pays</th><th>Arabica</th><th>Robusta</th><th>Export</th> {
+  for $p in doc()//pays
+  let $name := $p/@name/string(),
+      $export := xs:float($p/export),
+      $prodAra := xs:float($p/production[@type='arabica']),
+      $prodRob := xs:float($p/production[@type='robusta'])
+  where $export gt 5
+  order by $export ascending
+  return <tr><td>{$name}</td><td>{$prodAra}</td><td>{$prodRob}</td><td>{$export}</td></tr>
+} </table>
+
+
+
+<table><th>Pays</th><th>Arabica</th><th>Robusta</th><th>Export</th><tr><td>mexique</td><td>3.6</td><td></td><td></td></tr><tr><td>guatemala</td><td>3.2</td><td></td><td>3.1</td></tr><tr><td>ethiopie</td><td>6.5</td><td></td><td>3.3</td></tr><tr><td>perou</td><td>3.8</td><td></td><td>3.6</td></tr><tr><td>inde</td><td>1.4</td><td>4.1</td><td>5.5</td></tr><tr><td>honduras</td><td>7.5</td><td></td><td>7.1</td></tr><tr><td>indonesie</td><td>1.3</td><td>9.6</td><td>8.3</td></tr><tr><td>colombie</td><td>14.7</td><td></td><td>13.6</td></tr><tr><td>vietnam</td><td>1.3</td><td>28.6</td><td>28.15</td></tr><tr><td>bresil</td><td>38.8</td><td>12.4</td><td>30.43</td></tr></table>

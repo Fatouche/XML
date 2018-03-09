@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Champagne Seance 1 - Exo 2 - Champagne -->
+<!-- Objectif - Création d'un format XML à partir d'un texte libre -->
+<!-- Objectif - Questionnement: Informations? Pourquoi faire? Destiné à qui? -->
+<steps>
+  <step nom="pressurage">
+    <desc>Le pressurage consiste a presser manuellement le raisin pour en faire  ́
+      eclater les baies.</desc>
+      <action>
+        <name>Presser</name>
+        <what>Raisin</what>
+      </action>
+  </step>
+  <step nom="fermentation1">
+    <desc>
+      La fermentation est la phase de mise en cuve du jus de raisin. Celle-ci
+      dure quinze jours environ. Conseree a une temperature constante de 18-20
+      C, cette 1ere fermentation dite “alcoolique” active les levures
+      naturelles presentes dans le jus de raisin et transforme les sucres en un
+      melange d’alcool et de gaz carbonique.
+    </desc>
+    <action>
+      <name>Conserver</name>
+      <what>Jus de Raisin</what>
+      <constraint type="temperature" unite="C">18-20</constraint>
+      <constraint type="duree" unite="jour">15</constraint>
+    </action>
+  </step>
+  <!-- other steps -->
+</steps>

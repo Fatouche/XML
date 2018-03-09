@@ -1,0 +1,15 @@
+<!ELEMENT recettes (recette+)>
+<!ELEMENT recette (nom,desc,duree_prep,dure_cuisson,nb_calories,nb_parts,niveau_difficulte,ingredients)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT duree_prep (#PCDATA)>
+<!ELEMENT dure_cuisson (#PCDATA)>
+<!ELEMENT nb_calories (#PCDATA)>
+<!ELEMENT nb_parts (#PCDATA)>
+<!ELEMENT niveau_difficulte (#PCDATA)>
+<!ELEMENT ingredients (ingredient+)>
+<!ELEMENT ingredient (nom,nb_calories,qte,conditionnement+)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT nb_calories (#PCDATA)>
+<!ELEMENT qte (#PCDATA)>
+<!ELEMENT conditionnement (#PCDATA)+>

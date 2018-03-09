@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- Champagne Seance 1 - Exo 2 - Champagne -->
+<!-- Objectif - Création d'un format XML à partir d'un texte libre -->
+<!-- Objectif - Questionnement: Informations? Pourquoi faire? Destiné à qui? -->
+<steps>
+  <step>
+    Le <em>pressurage</em> consiste a presser manuellement le raisin pour en
+    faire ́eclater les baies.
+  </step>
+  <step>
+      La <em>fermentation</em> est la phase de mise en cuve du
+      <em>jus de raisin</em>. Celle-ci dure <em>quinze jours</em> environ.
+      Conservee a une <em>temperature constante de 18-20</em>
+      C, cette 1ere fermentation dite “alcoolique” active les levures
+      naturelles presentes dans le jus de raisin et transforme les sucres en un
+      melange d’alcool et de gaz carbonique.
+  </step>
+  <step>
+      La <em>clarification</em> débarrassera le vin des levures ou autres
+      particules solides qui altèrent sa saveur.
+  </step>
+  <step>
+      Le <em>vigneron</em> réalise l'assemblage en mélangeant des vins
+      "tranquilles" (non effervescents) issus de différentes récoltes pour une
+      saveur finale constante. Cette étape constitue la véritable
+      <em>"signature"</em> d'une cuvée de champagne.
+  </step>
+  <step>
+      Le vin obtenu est mis en bouteille, additionné de sucre et levures.
+      Cette <em>seconde fermentation</em> le transforme en vin effervescent.
+      L'étape du tirage permet la "prise de mousse", la bouteille est bouchée
+      d'un "bidule" (capsule).
+  </step>
+  <step>
+      Le vin reposera <em>15 mois</em> pour la fabrication d’un
+      <em>champagne brut</em> et <em>36 mois</em> pour la fabrication d'un
+      <em>Millésime</em>.
+  </step>
+  <step>
+      Le <em>remuage</em>, manuel ou mécanique, consiste à faire tourner la
+      bouteille de gauche à droite, puis à lui mettre la tête en bas, pour
+      faciliter l'accumulation des dépôts organiques.
+  </step>
+  <step>
+      Ceux-ci seront gelés puis évacués naturellement lors du dégorgement
+      effectué par le col de la bouteille plongé dans un <em>liquide à -25°C</em>.
+      La bouteille est alors prête à recevoir le bouchon de liège, la capsule,
+      le muselet, l'étiquette et la collerette qui finalisent la fabrication du
+      champagne.
+  </step>
+  <!-- other steps -->
+</steps>
